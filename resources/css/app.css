@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.vertical-line {
+    @apply w-[30px] h-[2px] block bg-black my-2;
+}
+
+.vertical-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.vertical-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.vertical-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
